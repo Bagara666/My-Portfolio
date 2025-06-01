@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>John Mumbi | Web Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #71719c;
+      color: #e0e0e0;
+    }
+    header {
+      background: linear-gradient(to right, #1e1e2f, #282841);
+      color: #fff;
+      padding: 2rem;
+      text-align: center;
+      position: relative;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    }
+    .logo {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      height: 70px;
+    }
+    header h1 { font-size: 2.8rem; letter-spacing: 1px; }
+    header p { font-size: 1.2rem; margin-top: 0.5rem; opacity: 0.9; }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .about, .skills, .projects, .contact {
+      margin-bottom: 3rem;
+      background: #1b1b26;
+      padding: 2rem;
+      border-radius: 20px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+    }
+    h2 {
+      color: #f0f0f0;
+      margin-bottom: 1rem;
+      font-size: 2rem;
+    }
+
+    .about-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-size: large;
+    }
+    .about-container img {
+      width: 250px;
+      border-radius: 25%;
+      border: 4px solid #555;
+      margin-bottom: 1rem;
+    }
+
+    .skills ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .skills li {
+      background: #33334d;
+      color: #fff;
+      padding: 0.6rem 1.2rem;
+      border-radius: 25px;
+      transition: background 0.3s ease, transform 0.3s ease;
+      cursor: default;
+      font-weight: 500;
+    }
+    .skills li:hover {
+      background: #5050a0;
+      transform: scale(1.1);
+    }
+
+    .project {
+      margin-bottom: 2.5rem;
+    }
+    .project img {
+      width: 100%;
+      border-radius: 15px;
+      margin-top: 0.5rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 1rem;
+      margin-top: 1rem;
+      border: 1px solid #444;
+      border-radius: 12px;
+      background: #101014;
+      color: #fff;
+    }
+    form button, .contact a button {
+      margin-top: 1rem;
+      padding: 1rem 2rem;
+      background: linear-gradient(to right, #5e60ce, #7400b8);
+      color: rgb(238, 232, 232);
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background 0.3s ease;
+    }
+    form button:hover, .contact a button:hover {
+      background: linear-gradient(to right, #3a0ca3, #4361ee);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #1a1a2f;
+      color: #aaa;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="profile-pic.webp" alt="Logo" class="logo" width="120px" style="border-radius: 80px;">
+    <h1>John Mumbi</h1>
+    <p>Creative Web Designer & Front-End Developer</p>
+  </header>
+
+  <section class="about">
+    <h2>About Me</h2>
+    <div class="about-container">
+      <img src="portfolio.jpg" alt="John Mumbi">
+      <p>
+        Hi! I’m John, a passionate web designer dedicated to creating engaging and intuitive digital experiences.
+         With a strong foundation in front-end technologies and a love for clean, user-centered design, 
+         I specialize in building websites that not only look good but also function beautifully across all devices.
+          Whether it's a simple landing page or a full website, I always aim to deliver work that reflects both creativity and purpose.
+      </p>
+    </div>
+  </section>
+
+  <section class="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>UI/UX Design</li>
+      <li>Responsive Design</li>
+      <li>Git & GitHub</li>
+    </ul>
+  </section>
+
+  <section class="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Fresh Foods Hotel</h3>
+      <p>A promotional website for a small-scale hotel business.</p>
+      <img src="web.jpeg" alt="Fresh Foods Hotel Project Screenshot">
+    </div>
+    <div class="project">
+      <h3>Salon & hairdressing</h3>
+      <p>Social media for beauty and hairdressing styles</p>
+      <img src="salon.jpeg" alt="Myth & Legend AI Videos Screenshot">
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Contact Me</h2>
+    <p>Interested in working together or have a question? Click the button below to contact me on WhatsApp!</p>
+    <a href="https://wa.me/254716949859" target="_blank">
+      <button type="button">Message Me on WhatsApp</button>
+    </a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 John Mumbi. All rights reserved. <br> @ bagara john</p>
+  </footer>
+</body>
+</html>
